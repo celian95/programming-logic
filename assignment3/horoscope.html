@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>horoscope</title>
+</head>
+<body>
+<script>
+	
+var name = prompt('what is your name?')
+var sign = prompt('what is your sign?')
+
+document.write( '<h1>hello' + name + '</h1>');
+document.write( '<h2>you are a :' + sign + '</h2>');
+
+if(sign.toLowerCase() == 'aries'){
+
+	document.write("<img src='http://www.freetattoodesigns.org/images/tattoo-gallery/tribal-aries-sign.gif'>")
+}	else if(sign.toLowerCase() == 'scorpio'){
+	document.write("<img src='http://www.charmsoflight.com/Images/Zodiac/Scorpio.png'>")
+}	else if(sign.toLowerCase() == 'leo'){
+	document.write("<img src='http://www.joannruhl.com/images/leo.jpg'>")
+}	else if(sign.toLowerCase() == 'taurus'){
+	document.write("<img src='http://vignette2.wikia.nocookie.net/falloutequestria/images/8/88/CM-Taurus.png/revision/latest?cb=20120511224548'>")
+}	else if(sign.toLowerCase() == 'gemini'){
+	document.write("<img src='http://www.nigelofbermondsey.com/nigelofbermondsey_wp/wp-content/uploads/2012/09/gemini.jpg'>")
+}	else if(sign.toLowerCase() == 'cancer'){
+	document.write("<img src='http://www.symbols.com/gi.php?type=1&id=4&i=1'>")
+}	else if(sign.toLowerCase() == 'virgo'){
+	document.write("<img src='https://s-media-cache-ak0.pinimg.com/236x/90/88/96/908896344cb6962d13fa9bb26dbe17ce.jpg'>")
+}	else if(sign.toLowerCase() == 'libra'){
+	document.write("<img src='https://biblodiac.files.wordpress.com/2014/09/amorton_libra_lrg.jpg'>")
+}	else if(sign.toLowerCase() == 'sagittarius'){
+	document.write("<img src='http://cdn3.collective-evolution.com/assets/uploads/2015/05/zodiac_symbol_Sagittarius_BW.png'>")
+}	else if(sign.toLowerCase() == 'capricorn'){
+	document.write("<img src='https://pbs.twimg.com/profile_images/1395226308/246px-Capricorn.svg_400x400.png'>")
+} 	else if(sign.toLowerCase() == 'aquarius'){
+	document.write("<img src='http://birthstones.me/wp-content/uploads/2014/02/symbol-of-aquarius.jpg'>")
+} 	else if(sign.toLowerCase() == 'pisces'){
+	document.write("<img src='http://www.homemadegiftguru.com/image-files/pisces-sun-sign-symbol.jpg'>")
+}  else { 
+	document.write(sign + 'is not a valid sign')
+}
+var today = new Date()
+document.write(today.getDay())
+if(today.getDay() == 1){
+	document.write('it\'s monday')
+} else if(today.getDay() == 2){
+	document.write('it\'s tuesday')
+}else if(today.getDay() == 3){
+	document.write('it\'s wednesday')
+}else if(today.getDay() == 4){
+	document.write('it\'s thursday')
+}else if(today.getDay() == 5){
+	document.write('it\'s friday')
+}else if(today.getDay() == 6){
+	document.write('it\'s saturday')
+}else if(today.getDay() == 0){
+	document.write('it\'s sunday')
+}
+
+</script>
+</body>
+</html>
