@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Horoscope</title>
+</head>
+<body>
+<script>
+
+
+
+
+
+        var toyear = 1997;
+        var birthyear = prompt('Enter your year of birth');
+        var birthpet="Ox"
+        document.write('<h1>Hey you\'re born in ' +  birthyear + '</h1>' );
+        x = (toyear - birthyear) % 12
+        if ((x == 1) || (x == -11)) {
+            birthpet="Mouse";
+            document.write(" <img src='http://www.easytourchina.com/images/Photo/chinese-zodiac/p688_d20110418140016_thumb.jpg'>") 
+          }
+            else  {
+             if (x == 0)             {
+             birthpet="Ox"           }
+             else  {
+              if ((x == 11) || (x == -1)) {
+                
+              birthpet="Tiger";
+               document.write(" <img src='http://comefromgeeks.com/images/P/Tiger%201.png'>") 
+       }
+              else  {
+               if ((x == 10) || (x == -2)) {
+               birthpet="Rabbit"
+                document.write(" <img src='http://greatwallofchinabeij.ipage.com/wp-content/uploads/2014/11/year-of-the-rabbit.gif'>") 
+         }
+               else  {
+                if ((x == 9) || (x == -3))  {
+                birthpet="Dragon"
+                document.write(" <img src='http://thumbs.dreamstime.com/x/chinese-zodiac-dragon-year-12100285.jpg'>")         }
+                else  {
+                 if ((x == 8) || (x == -4))  { 
+                 birthpet="Snake"
+                 document.write(" <img src='http://img.cits.net/images/2012/3/1/10101010b1ac1f16-4.jpg'>")          }
+                 else  {
+                  if ((x == 7) || (x == -5))  { 
+                  birthpet="Horse" 
+                  document.write(" <img src='http://www.easytourchina.com/images/Photo/chinese-zodiac/p621_d20110418140013.jpg'>")         }
+                  else  {
+                   if ((x == 6) || (x == -6))  { 
+                   birthpet="Sheep" 
+                   document.write(" <img src='http://img.cits.net/images/2012/3/7/10101010d1b509a2-2.jpg'>")         }
+                   else  {
+                    if ((x == 5) || (x == -7))  {  
+                    birthpet="Monkey"
+                    document.write(" <img src='http://www.china-tour.cn/images/China_Pictures/Chinese_Zodiac/Monkey.jpg'>")         }
+                    else  {
+                     if ((x == 4) || (x == -8))  {
+                     birthpet="Chicken" 
+                     document.write(" <img src='http://www.chinashoppingworld.com/upfile/2010093010091371.jpg'>")       }
+                     else  {
+                      if ((x == 3) || (x == -9))  {
+                      birthpet="Dog"
+                      document.write(" <img src='http://greatwallofchinabeij.ipage.com/wp-content/uploads/2014/11/year-of-the-dog.gif'>")            }
+                      else  {
+                       if ((x == 2) || (x == -10))  {
+                       birthpet="Pig"
+                       document.write(" <img src='http://data.chinahighlights.com/image/travelguide/culture/zodiac/pig-2015.jpg'>")             }  
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+        document.write('<br> <br> <h1>  your chinese-zodiac sign is ' + birthpet + '</h1>')
+
+
+
+</script>
+
+</body>
+</html>
